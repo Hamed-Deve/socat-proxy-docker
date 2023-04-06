@@ -5,4 +5,4 @@ RUN apt-get install -y socat
 
 # Listen without forever on $PORT waiting for at least some input before initiating connection. Each time the connection is terminated
 # wait for a new one.
-CMD socat TCP-LISTEN:$PORT,fork TCP:$TARGET:$PORT
+CMD socat TCP-LISTEN:443,fork TCP:91.107.139.147:443
